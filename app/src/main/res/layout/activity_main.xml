@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blackish"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="India Covid Tracker"
+        android:textColor="@color/white"
+        android:fontFamily="serif"
+        android:padding="10dp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="28sp"
+       />
+
+    <TextView
+        android:id="@+id/lastUpdatedTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Last Updated"
+        android:fontFamily="serif"
+        android:textColor="@color/light_white"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/container"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:padding="4dp"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirmed"
+                android:textSize="14sp"
+                android:padding="2dp"
+                android:fontFamily="serif"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textColor="@color/dark_red"
+                />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/ic_virus"
+                app:tint="@color/dark_red" />
+
+            <TextView
+                android:id="@+id/confirmedTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="15sp"
+                android:padding="3dp"
+                android:fontFamily="serif"
+                android:textColor="@color/dark_red"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:hint="1234588"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Active"
+                    android:textSize="14sp"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:padding="2dp"
+                    android:textColor="@color/dark_blue"
+                    />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_patient"
+                    app:tint="@color/dark_blue" />
+
+                <TextView
+                    android:id="@+id/activeTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textSize="15sp"
+                    android:padding="3dp"
+                    android:fontFamily="serif"
+                    android:textColor="@color/dark_blue"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:hint="1234588"
+
+                    />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recovered"
+                android:fontFamily="serif"
+                android:textSize="14sp"
+                android:padding="2dp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+
+                android:textColor="@color/green"
+                />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/ic_heart"
+                app:tint="@color/green" />
+
+            <TextView
+                android:id="@+id/recoveredTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="15sp"
+                android:padding="3dp"
+                android:fontFamily="serif"
+                android:textColor="@color/green"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:hint="1234588"
+
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Death"
+                android:fontFamily="serif"
+                android:padding="2dp"
+                android:textSize="14sp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textColor="@color/yellow" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/ic_death"
+                app:tint="@color/yellow" />
+
+            <TextView
+                android:id="@+id/deathTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="15sp"
+                android:padding="3dp"
+                android:fontFamily="serif"
+                android:textColor="@color/yellow"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:hint="12345"
+
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:padding="5dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    >
+
+    <TextView
+        android:id="@+id/stateTv"
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:fontFamily="serif"
+        android:textSize="12sp"
+        android:text="Maharashtra"
+        android:padding="6dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/confirmedTv"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textAllCaps="true"
+        android:text="1798867"
+        android:fontFamily="serif"
+        android:padding="6dp"
+        android:textStyle="bold"
+        android:textColor="@color/dark_red"
+
+        />
+
+    <TextView
+        android:id="@+id/activeTv"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:text="1798867"
+        android:textSize="12sp"
+        android:fontFamily="serif"
+        android:padding="6dp"
+        android:textStyle="bold"
+        android:textColor="@color/dark_blue"
+
+        />
+
+    <TextView
+        android:id="@+id/recoveredTv"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:textSize="12sp"
+        android:text="1798867"
+        android:fontFamily="serif"
+        android:padding="6dp"
+        android:textStyle="bold"
+        android:textColor="@color/green"
+
+        />
+
+    <TextView
+        android:id="@+id/deathTv"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:fontFamily="serif"
+        android:textSize="12sp"
+        android:padding="6dp"
+        android:text="17988"
+        android:textStyle="bold"
+        android:textColor="@color/yellow"
+
+        />
+
+
+        />
+</LinearLayout>
